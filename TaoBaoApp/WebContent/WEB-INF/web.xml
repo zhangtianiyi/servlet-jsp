@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>HandleRegister</servlet-name>
+    <servlet-class>control.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>control.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HandleGoodsServlet</servlet-name>
+    <servlet-class>control.HandleGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>control.ExitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HandleStoreServlet</servlet-name>
+    <servlet-class>control.HandleStoreServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteGoodsFromCar</servlet-name>
+    <servlet-class>goods.DeleteGoodsFromCar</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BuyGoods</servlet-name>
+    <servlet-class>goods.BuyGoods</servlet-class>
+  </servlet>
+
+
+  
+  
+
+  <servlet-mapping>
+    <servlet-name>HandleRegister</servlet-name>
+    <url-pattern>/control/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/control/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HandleGoodsServlet</servlet-name>
+    <url-pattern>/control/HandleGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/control/ExitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HandleStoreServlet</servlet-name>
+    <url-pattern>/control/HandleStoreServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteGoodsFromCar</servlet-name>
+    <url-pattern>/lyons.goods/DeleteGoodsFromCar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BuyGoods</servlet-name>
+    <url-pattern>/lyons.goods/BuyGoods</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>/jsp/join/login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,21 @@
+INSERT INTO store(sname, snum) VALUES ('潘的小店', 0);
+INSERT INTO store(sname, snum) VALUES ('刘的小店', 0);
+INSERT INTO store(sname, snum) VALUES ('周的小店', 0);
+
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('阿迪鞋', '四川', 320.00, 7, 1, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('耐克鞋', '浙江', 450.00, 6, 3, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('万斯鞋', '重庆', 600.00, 8, 2, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('HM衣', '山东', 250.00, 12, 2, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('韩版衣', '内蒙古', 199.00, 4, 1, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('毛衣', '辽宁', 249.00, 6, 3, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('阿迪棉裤', '山西', 450.00, 7, 3, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('李宁运动裤', '内蒙古', 350.00, 8, 2, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('休闲裤', '辽宁', 250.00, 14, 2, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('苹果手机', '浙江', 6000.00, 16, 1, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('华为手机', '四川', 2000.00, 13, 1, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('三星手机', '湖南', 5000.00, 15, 2, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('魅族手机', '福建', 1000.00, 9, 3, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('操作系统书', '福建', 100.00, 10, 3, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('数据库书', '山东', 120.00, 11, 2, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('计算机网络书', '浙江', 80.00, 13, 1, 0);
+INSERT INTO goods(gname, gmade, gprice, gbalance, gstore, gnum) VALUES ('数据结构书', '四川', 75.00, 16, 3, 0);

@@ -1,0 +1,49 @@
+.user{
+	list-style:none;
+	padding-right:18px; 
+}
+.user li{
+	float:right;
+}
+.user li a{
+	text-decoration:none;
+	color:#f60;
+	height:15px;
+	line-height:25px;
+}
+
+
+
+
+.search-form{
+	float: left; 
+	background-color: #ff8000;
+	padding:1px;
+}
+.search-text{
+	height:29px;
+	line-height: 25px;
+	float: left;
+	width: 340px;
+	border: 0;
+	outline: none;
+}
+.search-button{
+	width:70px;
+	height:29px;
+	float: left;
+	border: 1px;
+	background-color: #ff8000;
+}
+.search-button2{
+	width:70px;
+	height:29px;
+	float: left;
+	border: 1px;
+	background-color: #ff0000;
+}
+.search-box{
+	position:absolute;
+	top:150px;
+	left: 200px;
+}

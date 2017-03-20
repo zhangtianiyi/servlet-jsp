@@ -1,0 +1,31 @@
+*{
+	margin:0; 
+	padding:0; 
+	font-size:16px
+}
+.headerlist{
+	list-style:none; 
+	height:50px;
+	border-bottom:5px solid #F60;
+	padding-left:40px;
+}
+.headerlist li{
+	float:left;
+	margin-top:25px;
+}
+.headerlist li a{
+	margin-left:150px;
+	background-color:#ccc;
+	text-decoration:none;
+	display:block;
+	height:25px;
+	line-height:25px;
+	width:80px;
+	margin-right:1px;
+	text-align:center;
+}
+.headerlist li a.on, .headerlist li a:hover{
+	color:#fff;
+	background-position:0 -30px;
+}  
+  
