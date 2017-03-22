@@ -14,6 +14,7 @@
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
+	<script type="text/javascript" src="/TaoBaoApp/js/checkform.js"></script>
   </head>
 
   <body>	 
@@ -89,10 +90,10 @@
   			     commodity = id+","+name+","+made+","+price+","+balance+","+store+","+num;
   			     commodity = commodity.replaceAll("\\p{Blank}","");
   			       
-  			     String shopCarButton = "<form action='/MyJavaWebApp/goods/PutGoodsToCar' method='post'>"+
-  			                       "<input type='hidden' name='GoodsCar' value="+commodity+">"+
+  			     String shopCarButton = "<form action='/TaoBaoApp/control/HandleCarServlet?key=2' name='carform' method='post' onSubmit='return checkGood(this);'>"+
+  			                       "<input type='hidden' name='Car' value="+commodity+">"+
   			                       "<input type='submit' value='加入购物车'></form>";
-  			     String detail = "<form action='/MyJavaWebApp/jsp/browse/showDetail.jsp' method='post'>"+
+  			     String detail = "<form action='/TaoBaoApp/control/HandleGoodsServlet?key=2' method='post'>"+
   			                       "<input type='hidden' name='detail' value="+commodity+">"+
   			                       "<input type='submit' value='商品详情'></form>";
   			  %>

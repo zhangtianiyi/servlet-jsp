@@ -47,20 +47,27 @@ public class HandleGoodsServlet extends HttpServlet {
 		int key = Integer.parseInt(keyvalue);          
 		String keyWord = request.getParameter("keyWord");
 		
-		HttpSession session = request.getSession();        
-		PageShow goodShow = (PageShow)session.getAttribute("goodShow");
-
-		if (goodShow == null){
-			goodShow = new PageShow(null, 5, 1, 1);
-			session.setAttribute("goodShow", goodShow);
-		}
-		HandleGoodsModel hg = new HandleGoodsModel();
-		String s = hg.queryGoods(goodShow, key, keyWord);
-		if(s.equals("查询成功")){
-			request.getRequestDispatcher("/view/showGoods.jsp").forward(request, response);
-		}else{
-			session.setAttribute("exception", s);
-			response.sendRedirect("/view/exception.jsp");
+		switch(key){
+			case 1: //显示商品（购物列表）
+				HttpSession session = request.getSession();        
+				PageShow goodShow = (PageShow)session.getAttribute("goodShow");
+		
+				if (goodShow == null){
+					goodShow = new PageShow(null, 5, 1, 1);
+					session.setAttribute("goodShow", goodShow);
+				}
+				
+				HandleGoodsModel hg = new HandleGoodsModel();
+				String s = hg.queryGoods(goodShow, key, keyWord);
+				if(s.equals("查询成功")){
+					request.getRequestDispatcher("/view/showGoods.jsp").forward(request, response);
+				}else{
+					session.setAttribute("exception", s);
+					response.sendRedirect("/view/exception.jsp");
+				}
+			case 2:   //显示商品详细信息
+				request.getRequestDispatcher("/view/showGoodsDetail.jsp").forward(request, response);
 		}
 	}
 }
+  

@@ -25,12 +25,12 @@
     <servlet-class>control.HandleStoreServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>DeleteGoodsFromCar</servlet-name>
-    <servlet-class>goods.DeleteGoodsFromCar</servlet-class>
+    <servlet-name>HandleCarServlet</servlet-name>
+    <servlet-class>control.HandleCarServlet</servlet-class>
   </servlet>
   <servlet>
-    <servlet-name>BuyGoods</servlet-name>
-    <servlet-class>goods.BuyGoods</servlet-class>
+    <servlet-name>HandleBuyServlet</servlet-name>
+    <servlet-class>control.HandleBuyServlet</servlet-class>
   </servlet>
 
 
@@ -58,15 +58,15 @@
     <url-pattern>/control/HandleStoreServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>DeleteGoodsFromCar</servlet-name>
-    <url-pattern>/lyons.goods/DeleteGoodsFromCar</url-pattern>
+    <servlet-name>HandleCarServlet</servlet-name>
+    <url-pattern>/control/HandleCarServlet</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>BuyGoods</servlet-name>
-    <url-pattern>/lyons.goods/BuyGoods</url-pattern>
+    <servlet-name>HandleBuyServlet</servlet-name>
+    <url-pattern>/control/HandleBuyServlet</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>/jsp/join/login.jsp</welcome-file>
+    <welcome-file>/view/login.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

@@ -7,12 +7,22 @@
 		<link rel="stylesheet" type="text/css" href="/TaoBaoApp/css/index.css">
 		<base href="<%=basePath%>"> 
 		<title>淘宝网 - 淘！我喜欢</title>
-			<meta http-equiv="pragma" content="no-cache">
-			<meta http-equiv="cache-control" content="no-cache">
-			<meta http-equiv="expires" content="0">    
-			<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-			<meta http-equiv="description" content="This is my page">
+			
 	</head>
+	<style type="text/css">
+.good{
+	position:absolute;
+	top:130px;
+	left: 200px;
+}
+.store{
+	position:absolute;
+	top:180px;
+	left: 200px;
+}
+  </style>
+	
+	
 	
 	<body>
 		<jsp:useBean id="loginBean" class="model.UserSession" scope="session"/>
@@ -33,6 +43,9 @@
    							<dt>
 	    						<a>欢迎您,<b><font color="red"><%= username %></font></b></a>
 	    						<a href="/TaoBaoApp/control/ExitServlet"><font color="#CDC9C9">退出</font></a>
+	    						<br/><br/>
+	     					<a href="/TaoBaoApp/control/HandleCarServlet?key=1">购物车</a>
+	     					<a href="">待收货</a>
    							</dt>
    						</dl>
    					<%
@@ -40,8 +53,18 @@
     				 %>
     			</li>
     		</ul>
-    			<div align="center">
-    			<span align="center">鞋 衣 裤 书 手机</span>
+    		<center>
+    			<font>
+    				<% String hint = (String)request.getAttribute("hint");
+    				if(hint != null){ %>
+    					<%= hint%>
+    				<%
+    				}
+    				%>
+    			</font>
+    		</center>
+    			<div class = "bigdiv">
+    			<font class="good" color=gray> 商品关键字如：鞋 衣 裤 书 手机 </font>
 				    <div class="search-box">
 				        <form class="search-form" name="formname" action="" target="_self" id="search-form" method="post">
 				            <input type="text" class="search-text" name="keyWord" id="search_input" autocomplete="off"/>
@@ -51,7 +74,7 @@
 				        </form>
 				    </div>
 			    <br />
-					<span align="center">潘的小店 刘的小店 周的小店</span>
+			    	<font class="store" color=gray> 店铺名如：潘的小店 刘的小店 周的小店 </font>
 			    </div>
 	</body>
 </html>

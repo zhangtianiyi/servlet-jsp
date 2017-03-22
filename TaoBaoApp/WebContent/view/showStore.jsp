@@ -83,7 +83,7 @@
   			     
   			     String detail = "<form action='/MyJavaWebApp/jsp/browse/showDetail.jsp' method='post'>"+
   			                       "<input type='hidden' name='detail' value="+commodity+">"+
-  			                       "<input type='submit' value='店铺详情'></form>";
+  			                       "<input type='submit' value='进入店铺'></form>";
   			  %>
   			          <tr <% if(i%2 == 0){%> bgcolor="#FFE4B5" <%}else{%> bgcolor="#FFFACD" <%}; %>>
   			               <td><%= name %></td>
